@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link href="https://cdn.jsdelivr.net/npm/beercss@3.12.3/dist/cdn/beer.min.css" rel="stylesheet" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.12.3/dist/cdn/beer.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,39 +19,36 @@
   </head>
   <body>
     <div class="container">
-      <div class="card-white">
-        <!-- TODO: change the name and subtitle below -->
-        <h1>Hello, I'm Sahil!</h1>
-        <h2>Graduate Techonology Consultant, Solirius Reply</h2>
-        <img
-          src="images/favicon.png"
-          alt="Profile Picture of Sahil Goonraz"
-          width="200px"
-          height="200px"
-          class="img-circle"
-        />
-        <p>Remind me to change my GitHub profile pic...</p>
-        <!-- TODO: update the email below - think about how the email link operate. Does it open in the same or new tab? -->
-        <a href="sahil.goonraz@solirius.com"  target="_newtab" class="btn-blue">Contact Me</a>
-      </div>
-      <div class="card-white">
-        <h3>Follow Me</h3>
-        <p>(I don't really use socials)</p>
+      <article class="round">
+        <div class="grid no-space">
+          <div class="s6">
+            <img class="responsive" src="images/favicon.png">
+          </div>
+          <div class="s6">
+            <div class="padding">
+              <h1>Hi, I'm Sahil!</h1>
+              <p>I recently completed a Master's in Physics at UCL, and I'm currently working as a Graduate Technology Consultant at Solirius Reply.</p>
+              <p>My interests include machine learning and its applications, (rarely) contributing to open-source projects, and tinkering with self-hostable services!</p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="round">
         <!-- TODO: add some social links here and use Fontawesome icons -->
         <!-- https://fontawesome.com/search?o=r&m=free -->
-        <ul class="list-inline">
-          <li>
-            <a href="https://github.com/skg17">
-              <i class="fa-brands fa-github icon-larger"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/sahil-goonraz">
-              <i class="fa-brands fa-linkedin icon-larger"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
+        <a href="https://github.com/skg17" target="_blank">
+          <button>
+            <img class="responsive" src="/images/github-icon.webp">
+            <span>GitHub</span>
+          </button>
+        </a>
+        <a href="https://www.linkedin.com/in/sahil-goonraz" target="_blank">
+          <button>
+            <img class="responsive" src="/images/linkedin-logo.png">
+            <span>LinkedIn</span>
+          </button>
+        </a>
+      </article>
     </div>
   </body>
 </html>
