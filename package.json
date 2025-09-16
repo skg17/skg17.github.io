@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "beercss": "^3.12.3",
+    "material-dynamic-colors": "^1.1.2"
+  }
+}
